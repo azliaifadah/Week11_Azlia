@@ -1,0 +1,22 @@
+{
+    "name": "selenium-mocha-digital-skola",
+    "version": "1.0.0",
+    "description": "Selenium WebDriver tests using Mocha with Mochawesome reports",
+    "type": "module",
+    "scripts": {
+        "coba": "mocha tests/test-sauce.js --recursive --timeout 60000 --reporter spec",
+        "coba-parallel": "mocha tests/test_sauce.js --parallel --recursive --timeout 60000",
+        "coba-mochawesome": "mocha tests --recursive --timeout 60000 --reporter mochawesome",
+        "coba-simple-html": "mocha tests --recursive --timeout 60000 --reporter mocha-simple-html-reporter --reporter-options output=report.html"
+    },
+    "dependencies": {
+        "selenium-webdriver": "^4.17.0",
+        "pngjs": "^7.0.0",
+        "pixelmatch": "^7.1.0"
+    },
+    "devDependencies": {
+        "mocha": "^10.2.0",
+        "mochawesome": "^7.1.3",
+        "mocha-simple-html-reporter": "^2.0.0"
+    }
+}
